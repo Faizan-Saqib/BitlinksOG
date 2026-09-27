@@ -6,25 +6,45 @@ const Shorten = () => {
   const [url, setUrl] = useState("")
   const [shortUrl, setShortUrl] = useState("")
   const [generated, setGenerated] = useState("")
-
-  const generate = async () => {
-    try {
-      const res = await fetch("/api/generate", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ url, shorturl: shortUrl })
+const generate = async () => {
+  try {
+    const res = await fetch("/api/generate", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        url,
+        shorturl: shortUrl
       })
-      const result = await res.json()
-      
-      const host = process.env.NEXT_HOST || window.location.origin
-      setGenerated(`${host}/${shortUrl}`)
-      setUrl("")
-      setShortUrl("")
-      alert(result.message)
-    } catch (error) {
-      console.error(error)
+    })
+
+    const text = await res.text()
+
+    if (!text) {
+      throw new Error(`API returned an empty response (HTTP ${res.status})`)
     }
+
+    const result = JSON.parse(text)
+
+    if (!res.ok || !result.success) {
+      alert(result.message || "Something went wrong")
+      return
+    }
+
+    const host = process.env.NEXT_PUBLIC_NEXT_HOST || window.location.origin
+
+    setGenerated(`${host}/${shortUrl}`)
+
+    setUrl("")
+    setShortUrl("")
+
+    alert(result.message)
+  } catch (error) {
+    console.error("Generate error:", error)
+    alert("Something went wrong while generating the URL.")
   }
+}
 
   return (
      <>
