@@ -141,7 +141,7 @@ export default function Home() {
                     <div className="flex gap-3 rounded-xl border border-purple-500/30 bg-purple-500/[0.06] px-4 py-4">
 
                       <span className="text-purple-300 text-sm flex-1">
-                        yourdomain.com/faizan
+                        bitlinks.faizansaqib.com/faizan
                       </span>
 
                       <span className="text-purple-400 text-sm font-semibold">
