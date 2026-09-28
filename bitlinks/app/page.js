@@ -14,36 +14,7 @@ export default function Home() {
       </div>
 
       {/* Navbar */}
-      <nav className="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
-        <Link
-          href="/"
-          className="text-2xl font-black tracking-tight"
-        >
-          <span className="text-white">Short</span>
-          <span className="text-purple-400">ly</span>
-        </Link>
 
-        <div className="hidden md:flex items-center gap-8 text-sm text-gray-400">
-          <Link href="/" className="hover:text-white transition">
-            Home
-          </Link>
-
-          <Link href="/shorten" className="hover:text-white transition">
-            Shorten URL
-          </Link>
-
-          <Link href="/github" className="hover:text-white transition">
-            GitHub
-          </Link>
-        </div>
-
-        <Link
-          href="/shorten"
-          className="rounded-full bg-white text-black px-5 py-2.5 text-sm font-bold hover:bg-purple-100 transition"
-        >
-          Get Started
-        </Link>
-      </nav>
 
       {/* Hero */}
       <section className="max-w-7xl mx-auto px-6 pt-16 pb-24">
