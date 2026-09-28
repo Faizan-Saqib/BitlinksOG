@@ -15,7 +15,6 @@ export default function Home() {
 
       {/* Navbar */}
 
-
       {/* Hero */}
       <section className="max-w-7xl mx-auto px-6 pt-16 pb-24">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
