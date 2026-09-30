@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -12,8 +11,6 @@ export default function Home() {
         <div className="absolute top-[200px] right-[-250px] w-[600px] h-[600px] rounded-full bg-indigo-600/20 blur-[140px]" />
         <div className="absolute bottom-[-300px] left-[30%] w-[500px] h-[500px] rounded-full bg-fuchsia-600/10 blur-[140px]" />
       </div>
-
-      {/* Navbar */}
 
       {/* Hero */}
       <section className="max-w-7xl mx-auto px-6 pt-16 pb-24">
@@ -43,7 +40,6 @@ export default function Home() {
 
             {/* Buttons */}
             <div className="mt-9 flex flex-wrap gap-4">
-
               <Link
                 href="/shorten"
                 className="group inline-flex items-center gap-3 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 px-7 py-4 font-bold shadow-2xl shadow-purple-600/20 hover:scale-[1.02] transition"
@@ -62,12 +58,10 @@ export default function Home() {
                 View GitHub
                 <span>↗</span>
               </Link>
-
             </div>
 
             {/* Small stats */}
             <div className="mt-12 flex flex-wrap gap-8">
-
               <div>
                 <p className="text-2xl font-bold">100%</p>
                 <p className="text-sm text-gray-500 mt-1">
@@ -92,7 +86,6 @@ export default function Home() {
                   To use
                 </p>
               </div>
-
             </div>
           </div>
 
@@ -139,15 +132,13 @@ export default function Home() {
                     </p>
 
                     <div className="flex gap-3 rounded-xl border border-purple-500/30 bg-purple-500/[0.06] px-4 py-4">
-
                       <span className="text-purple-300 text-sm flex-1">
-                        bitlinks.faizansaqib.com/faizan
+                        shortly.faizansaqib.com/faizan
                       </span>
 
                       <span className="text-purple-400 text-sm font-semibold">
                         Copy
                       </span>
-
                     </div>
                   </div>
 
@@ -283,11 +274,17 @@ export default function Home() {
           </p>
 
           <div className="flex gap-6 text-sm text-gray-500">
-            <Link href="/shorten" className="hover:text-white transition">
+            <Link
+              href="/shorten"
+              className="hover:text-white transition"
+            >
               Shorten
             </Link>
 
-            <Link href="/github" className="hover:text-white transition">
+            <Link
+              href="/github"
+              className="hover:text-white transition"
+            >
               GitHub
             </Link>
           </div>
