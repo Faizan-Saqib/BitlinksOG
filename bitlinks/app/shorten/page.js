@@ -109,7 +109,7 @@ const Shorten = () => {
             <h1 className="mt-7 text-5xl xl:text-6xl font-black leading-tight">
               Turn long URLs into
               <span className="block bg-gradient-to-r from-purple-400 via-fuchsia-400 to-indigo-400 bg-clip-text text-transparent">
-                simple links.
+                simple links
               </span>
             </h1>
 
