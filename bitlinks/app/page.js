@@ -24,11 +24,11 @@ export default function Home() {
             </div>
 
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-black leading-[1.05] tracking-tight">
-              Short links.
+              Short links
               <br />
 
               <span className="bg-gradient-to-r from-purple-400 via-fuchsia-400 to-indigo-400 bg-clip-text text-transparent">
-                Big possibilities.
+                Big possibilities
               </span>
             </h1>
 
@@ -165,14 +165,14 @@ export default function Home() {
             </p>
 
             <h2 className="mt-4 text-3xl md:text-4xl font-bold">
-              Everything you need.
+              Everything you need
               <br />
-              Nothing you don't.
+              Nothing you don't
             </h2>
 
             <p className="mt-5 text-gray-400">
               A straightforward URL shortener built for people
-              who just want to create short links quickly.
+              who just want to create short links quickly
             </p>
           </div>
 
@@ -191,7 +191,7 @@ export default function Home() {
 
               <p className="mt-3 text-gray-400 leading-7">
                 Generate short URLs quickly and redirect your
-                visitors without unnecessary complexity.
+                visitors without unnecessary complexity
               </p>
 
             </div>
@@ -209,7 +209,7 @@ export default function Home() {
 
               <p className="mt-3 text-gray-400 leading-7">
                 No unnecessary signup flow or complicated personal
-                information requirements just to shorten a URL.
+                information requirements just to shorten a URL
               </p>
 
             </div>
@@ -227,7 +227,7 @@ export default function Home() {
 
               <p className="mt-3 text-gray-400 leading-7">
                 Choose your own custom short URL so your links
-                are easier to share and remember.
+                are easier to share and remember
               </p>
 
             </div>
@@ -250,7 +250,7 @@ export default function Home() {
             </h2>
 
             <p className="mt-5 text-gray-400 max-w-xl mx-auto">
-              Create a clean, memorable link in just a few seconds.
+              Create a clean, memorable link in just a few seconds
             </p>
 
             <Link
